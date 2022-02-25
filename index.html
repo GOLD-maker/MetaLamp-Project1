@@ -1,46 +1,49 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 	<head>
 		<meta charset="utf-8">
 		<title>TOXIN: Бронирование отелей</title>
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 
-	<body>
-		<header>
-			<nav>
-				<div>
-					<div>
-						<a>
-							<img src="" width="" height="" alt="Логотип TOXIN">
+	<body class="page-body">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<div class="main-navigation-bar">
+					<div class="main-navigation-wrapper">
+						<a class="main-header-logo">
+							<img src="img/logo.svg" width="105" height="40" alt="Логотип TOXIN">
 						</a>
-						<ul>
-							<li>
+						<ul class="site-navigation">
+							<li class="site-navigation-item">
 								<a href="#">О Нас</a>
 							</li>
-							<li>
+							<li class="site-navigation-item">
 								<a href="#">Услуги</a>
 							</li>
-							<li>
+							<li class="site-navigation-item">
 								<a href="#">Вакансии</a>
 							</li>
-							<li>
+							<li class="site-navigation-item">
 								<a href="#">Новости</a>
 							</li>
-							<li>
+							<li class="site-navigation-item">
 								<a href="#">Соглашения</a>
 							</li>
 						</ul>
 					</div>
-					<div>
+					<div class="user-navigation">
 						<ul>
 							<li>
-								<a href="#">Войти</a>
+								<a class="enter-link" href="#">Войти</a>
 							</li>
 							<li>
-								<a href="#">Зарегистрироваться</a>
+								<a class="registration-link" href="#">Зарегистрироваться</a>
 							</li>
 						</ul>
+						<div class="visually-hidden">
+							<a class="profile-link" href="#">Юлий Цезарь</a>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -48,23 +51,28 @@
 
 
 		<main>
-			<div>
-				<section>
-					<form method="get" action="#" target="_blank">
+			<div class="hotel-form">
+				<section class="hotel-content">
+					<p class="hotel-title">Найдём номера под ваши пожелания</p>
+					<form class="form" method="get" action="#" target="_blank">
 						<fieldset>
 							<div>
-								<label>Прибытие</label>
-								<label>Выезд</label>
+								<label for="min-date">Прибытие</label>
+								<input type="text" name="min-date" placeholder="ДД.ММ.ГГГГ">
+								<label for="max-date">Выезд</label>
+								<input type="text" name="max-date" placeholder="ДД.ММ.ГГГГ">
 							</div>
 						</fieldset>
 						<fieldset>
 							<div>
-								<label>Гости</label>
+								<label for="guest">Гости</label>
+								<input type="text" name="guest" placeholder="Сколько гостей">
 							</div>
 						</fieldset>
 						<button type="submit">Подобрать номер</button>
 					</form>
 				</section>
+				<img src="img/image.png" width="1440" height="830" alt="Слайд №1">
 			</div>
 			<div>
 				<p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
@@ -72,34 +80,34 @@
 		</main>
 
 
-		<footer>
-			<section>
-				<ul>
-					<li>
-						<img src="" width="" height="" alt="">
+		<footer class="main-footer">
+			<section class="menu-footer">
+				<ul class="footer-navigation">
+					<li class="footer-navigation-item">
+						<img src="img/logo.svg" width="105" height="40" alt="Логотип TOXIN">
 						<p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
 					</li>
-					<li>
+					<li class="footer-navigation-item">
 						<p>Навигация</p>
 						<a href="#">О нас</a>
 						<a href="#">Новости</a>
 						<a href="#">Служба поддержки</a>
 						<a href="#">Услуги</a>
 					</li>
-					<li>
+					<li class="footer-navigation-item">
 						<p>О нас</p>
 						<a href="#">О сервисе</a>
 						<a href="#">Наша команда</a>
 						<a href="#">Вакансии</a>
 						<a href="#">Инвесторы</a>
 					</li>
-					<li>
+					<li class="footer-navigation-item">
 						<p>Служба поддержки</p>
 						<a href="#">Соглашения</a>
 						<a href="#">Сообщества</a>
 						<a href="#">Связь с нами</a>
 					</li>
-					<li>
+					<li class="footer-navigation-item">
 						<p>Подписка</p>
 						<a href="#">Получайте специальные предложения и новости сервиса</a>
 						<input type="email" placeholder="Email" required>
@@ -107,24 +115,24 @@
 					</li>
 				</ul>
 			</section>
-			<section>
+			<section class="footer-social">
 				<div>
 					<p>Copyright © 2018 Toxin отель. Все права защищены.</p>
 				</div>
-				<ul>
+				<ul class="social-list">
 					<li>
-						<a href="#">
-							<img src="" width="" height="" alt="Твиттер">
+						<a class="social-button" href="#">
+							<img src="img/twitter.svg" width="24" height="24" alt="Твиттер">
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<img src="" width="" height="" alt="Фэйсбук">
+						<a class="social-button" href="#">
+							<img src="img/facebook.svg" width="24" height="24" alt="Фэйсбук">
 						</a>
 					</li>
 					<li>
-						<a href="#">
-							<img src="" width="" height="" alt="Инстаграм">
+						<a class="social-button" href="#">
+							<img src="img/instagram.svg" width="24" height="24" alt="Инстаграм">
 						</a>
 					</li>
 				</ul>
