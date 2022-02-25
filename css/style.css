@@ -1,0 +1,45 @@
+/* Fonts */
+
+
+@font-face {
+	font-family: "Montserrat"
+	src: url("../fonts/montserrat.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat"
+	src: url("../fonts/montserratbold.ttf") format("ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+/* Variables */
+
+
+:root {
+	--dark-shade: #1F2041;
+	--purple: #BC9CFF;
+	--green: #6FCF97;
+}
+
+
+/* Global */
+
+
+body {
+	font-family: "Montserrat", "Arial", sans-serif;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
